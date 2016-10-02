@@ -28,10 +28,10 @@ Gem::Specification.new do |spec|
     spec.bindir = 'exe'
     spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
     spec.require_paths = ['lib']
-
-    spec.add_dependency 'abstraction'
-    spec.add_development_dependency 'bundler'
-    spec.add_development_dependency 'rake'
-    spec.add_development_dependency 'rdoc'
-    spec.add_development_dependency 'aruba'
+    
+    spec.add_dependency 'abstraction', '~> 0.0.4'
+    spec.add_development_dependency 'bundler', '~> 1.13'
+    spec.add_development_dependency 'rake', '~> 11.3'
+    spec.add_development_dependency 'rdoc', '~> 4.2'
+    spec.add_development_dependency 'aruba', '~> 0.14'
 end
