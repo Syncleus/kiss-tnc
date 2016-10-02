@@ -8,7 +8,7 @@ DESCRIBE YOUR GEM HERE
 
 == Links
 
-* {Source on Github}[https://github.com/Syncleus/aprs]
+* {Source on Github}[https://github.com/Syncleus/kiss-tnc]
 * RDoc[LINK TO RDOC.INFO]
 
 == Install
