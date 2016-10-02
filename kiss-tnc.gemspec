@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
     spec.authors = ['Jeffrey Phillips Freeman']
     spec.email = ['jeffrey.freeman@syncleus.com']
 
-    spec.summary = %q{Ruby library for APRS communications.}
-    spec.description = %q{Ruby library for APRS communications.}
+    spec.summary = %q{Library for KISS communication with TNCs.}
+    spec.description = %q{Ruby library for KISS communication with Terminal Node Controllers.}
     spec.homepage = 'https://github.com/Syncleus/aprs'
 
     # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
