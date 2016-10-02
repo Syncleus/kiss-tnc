@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'kiss_mock'
+require_relative '../lib/kiss/test/kiss_mock'
 
 module Kiss
     # KG6WTF>S7TSUV,MTOSO-2,WIDE2*,qAR,KF6FIR-10:`17El#X-/kg6wtf@gosselinfamily.com

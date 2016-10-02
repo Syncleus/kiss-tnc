@@ -1,4 +1,4 @@
-require_relative '../lib/kiss/kiss_abstract'
+require 'kiss/kiss_abstract'
 
 module Kiss
     class KissMock < KissAbstract

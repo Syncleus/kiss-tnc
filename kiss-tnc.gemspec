@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'aprs/app_info'
+require 'kiss/app_info'
 
 Gem::Specification.new do |spec|
-    spec.name = 'aprs'
-    spec.version = Aprs::VERSION
+    spec.name = 'kiss-tnc'
+    spec.version = Kiss::VERSION
     spec.authors = ['Jeffrey Phillips Freeman']
     spec.email = ['jeffrey.freeman@syncleus.com']
 
@@ -28,9 +28,7 @@ Gem::Specification.new do |spec|
     spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
     spec.require_paths = ['lib']
 
-    spec.add_dependency 'colorize'
     spec.add_dependency 'abstraction'
-    spec.add_dependency 'json'
     spec.add_development_dependency 'bundler'
     spec.add_development_dependency 'rake'
     spec.add_development_dependency 'rdoc'
