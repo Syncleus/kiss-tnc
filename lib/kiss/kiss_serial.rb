@@ -30,6 +30,8 @@ module Kiss
         protected
         def read_interface
             read_data = @serial.read(@read_bytes)
+            puts 'read_interface:'
+            p read_Date
             if read_data
                 return read_data.chars.map { |c| c.ord }
             else
@@ -39,6 +41,8 @@ module Kiss
 
         protected
         def write_interface(data)
+            puts 'write_interface:'
+            p data
             @serial.write(data)
         end
 
@@ -46,10 +50,13 @@ module Kiss
         def connect(mode_init=nil, **kwargs)
             super
 
+            puts 'connecting...'
             @serial = SerialPort.new(@com_port, @baud, @byte_size, @stop_bits, @parity)
             @serial.read_timeout = SERIAL_READ_TIMEOUT
 
             if mode_init
+                puts 'mode_init:'
+                p mode_init
                 @serial.write(mode_init)
                 @exit_kiss = true
             else
