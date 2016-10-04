@@ -39,7 +39,9 @@ module Kiss
 
         protected
         def write_interface(data)
-            data = data.map { |b| b.chr }.join
+            unless data.is_a? String
+                data = data.map { |b| b.chr }.join
+            end
             @serial.write(data)
         end
 
