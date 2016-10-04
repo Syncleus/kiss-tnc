@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+
+
 ## 1.0.2
 
 * Fixed a bug where bytes were not written to the serial stream correctly.
