@@ -53,7 +53,7 @@ module Kiss
             @serial.read_timeout = SERIAL_READ_TIMEOUT
 
             if mode_init
-                @serial.write(mode_init)
+                write_interface(mode_init)
                 @exit_kiss = true
             else
                 @exit_kiss = false
