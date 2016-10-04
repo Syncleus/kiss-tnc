@@ -58,7 +58,7 @@ module Kiss
             if mode_init
                 puts 'mode_init:'
                 p mode_init
-                @serial.write(mode_init)
+                write_interface(mode_init)
                 @exit_kiss = true
             else
                 @exit_kiss = false
