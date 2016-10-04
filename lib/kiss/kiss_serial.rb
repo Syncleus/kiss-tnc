@@ -41,6 +41,7 @@ module Kiss
 
         protected
         def write_interface(data)
+            data.map { |b| b.chr }.join
             puts 'write_interface:'
             p data
             @serial.write(data)
