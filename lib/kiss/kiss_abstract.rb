@@ -120,7 +120,7 @@ module Kiss
         end
 
         public
-        def close
+        def close(*args, **kwargs)
         end
 
         public

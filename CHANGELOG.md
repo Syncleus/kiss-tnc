@@ -2,7 +2,7 @@
 
 ## 1.0.3
 
-
+* Changed KissSerial so its methods can accept any arguments, used for abstraction purposes.
 
 ## 1.0.2
 

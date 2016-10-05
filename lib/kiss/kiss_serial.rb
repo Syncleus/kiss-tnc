@@ -46,7 +46,7 @@ module Kiss
         end
 
         public
-        def connect(mode_init=nil, **kwargs)
+        def connect(mode_init=nil, *args, **kwargs)
             super
 
             @serial = SerialPort.new(@com_port, @baud, @byte_size, @stop_bits, @parity)
@@ -69,7 +69,7 @@ module Kiss
         end
 
         public
-        def close
+        def close(*args, **kwargs)
             super
 
             if @exit_kiss
